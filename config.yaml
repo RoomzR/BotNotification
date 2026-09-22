@@ -1,0 +1,15 @@
+roi:
+  x1: 0.5547
+  y1: 0.4528
+  x2: 0.9734
+  y2: 0.9861
+detection:
+  model: yolov8n.pt
+  confidence: 0.45
+  presence_seconds: 30
+  cooldown_seconds: 180
+  frame_skip: 2
+  show_preview: true
+telegram:
+  message: ⚠️ Возле админ-кассы стоят люди ({count}). Нужно подойти!
+  send_photo: true

@@ -1,0 +1,1 @@
+"""CyberX Desktop app package."""

@@ -1,0 +1,131 @@
+# CyberX Control — Гомель, Интернациональная 13
+club:
+  name: "CyberX Gomel Internatsionalnaya 13"
+  phone: "+375 (29) 602-62-02"
+
+nvr:
+  ip: "192.168.10.253"
+  user: "admin"
+  rtsp_port: 554
+  use_substream: true
+
+# Только нужные алерты: очередь у админки + своя еда/напитки
+cameras:
+  - id: reception
+    name: "Reception 01_REG"
+    channel: 23
+    modules: [reception_queue, own_products]
+  - id: scene02
+    name: "Scene 02"
+    channel: 6
+    modules: [own_products]
+  - id: scene03
+    name: "Scene 03"
+    channel: 11
+    modules: [own_products]
+  - id: scene04
+    name: "Scene 04"
+    channel: 12
+    modules: [own_products]
+  - id: scene05
+    name: "Scene 05"
+    channel: 16
+    modules: [own_products]
+  - id: gaming01
+    name: "Gaming room 01"
+    channel: 7
+    modules: [own_products]
+  - id: gaming02
+    name: "Gaming room 02"
+    channel: 8
+    modules: [own_products]
+  - id: gaming03
+    name: "Gaming room 03"
+    channel: 10
+    modules: [own_products]
+  - id: gaming04
+    name: "Gaming room 04"
+    channel: 1
+    modules: [own_products]
+  - id: gaming05
+    name: "Gaming room 05"
+    channel: 14
+    modules: [own_products]
+
+vision:
+  model: yolov8s.pt
+  confidence: 0.32
+  # своя еда: держать в кадре N сек, потом алерт
+  confirm_seconds: 10
+  # не спамить одной и той же камерой
+  cooldown_seconds: 300
+  cameras_per_cycle: 4
+  show_dashboard: true
+  # 4–5 камер в ряд (крупнее плитки в Desktop)
+  dashboard_cols: 5
+  reception_presence_seconds: 30
+  # для own_products брать main stream (лучше OCR/embedding)
+  prefer_mainstream_for_own: true
+  embedding:
+    enabled: true
+    model: "ViT-B-32"
+    club_min_score: 0.27
+    own_if_below: 0.20
+    margin: 0.035
+  own_products:
+    alert_on_unknown_held: true
+    person_pad: 0.32
+    # ниже порога — только soft-алерты + баннер «каталог неполный»
+    min_catalog_coverage: 0.9
+
+alerts:
+  send_photo: true
+  # мягкий режим: «подозрительно» vs «точно своё»
+  soft_mode: true
+  # подозрительные дольше держать в кадре и реже слать в Telegram
+  soft_confirm_seconds: 25
+  soft_cooldown_seconds: 600
+  # false = подозрительные только в UI/Алерты, без Telegram (рекомендуется до полного каталога)
+  soft_telegram: false
+
+rules:
+  - id: no_own_food_drink
+    title: "Своя еда и напитки запрещены"
+    severity: high
+    text: "Проносить еду и напитки, купленные вне клуба, запрещено. Только продукция бара CyberX."
+
+modules:
+  reception_queue: true
+  own_products: true
+  cleanliness: false
+  fridge_stock: false
+  temperature: false
+  incidents: false
+  devices: false
+  bonuses: true
+  pc_control: true
+  guests: true
+  inventory: true
+  staff_presence: false
+  tasks: true
+  langame_sync: true
+
+temperature:
+  poll_seconds: 60
+  min_c: 18
+  max_c: 27
+  zones: []
+
+devices:
+  phones: []
+  gamepad_check_minutes: 180
+
+langame:
+  mode: stub
+  base_url: ""
+  api_token: ""
+  pc_agent_url: ""
+
+bonuses:
+  default_bonus_rub: 5
+  require_owner_confirm: true

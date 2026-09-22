@@ -1,0 +1,142 @@
+# Каталог бара CyberX — эталонный ассортимент
+# Сотрудник может дополнять через Desktop (фото → OCR → aliases)
+
+products:
+  - sku: TUC-100
+    name: "TUC 100 г"
+    category: snack
+    weight: "100 г"
+    aliases: [tuc, тук]
+  - sku: HRUSTIM-70
+    name: "ХРУСТИМ 70 г"
+    category: snack
+    weight: "70 г"
+    aliases: [хрустим, hrusteam, khrustim, hrustim]
+  - sku: CHUPA-70
+    name: "CHUPA CHUPS 70 г"
+    category: snack
+    weight: "70 г"
+    aliases: [chupa, chupachups, "chupa chups", чупа]
+  - sku: FRUTTELLA-70
+    name: "FRUTTELLA 70 г"
+    category: snack
+    weight: "70 г"
+    aliases: [fruttella, фрутелла, frutella]
+  - sku: BONPARI-70
+    name: "БОН ПАРИ 70 г"
+    category: snack
+    weight: "70 г"
+    aliases: [bonpari, "bon pari", бонпари, "бон пари"]
+  - sku: MMS-45
+    name: "M&M'S 45 г"
+    category: snack
+    weight: "45 г"
+    aliases: ["m&m", mms, "m and m", "m&ms", эмэнэмс]
+  - sku: SKITTLES-38
+    name: "SKITTLES 38 г"
+    category: snack
+    weight: "38 г"
+    aliases: [skittles, скитлс]
+  - sku: BULBA-75
+    name: "БУЛЬБА CHIPS 75 г"
+    category: snack
+    weight: "75 г"
+    aliases: [бульба, bulba, "bulba chips"]
+  - sku: BARS-50
+    name: "БАТОНЧИКИ 50 г"
+    category: snack
+    weight: "50 г"
+    # конкретные бренды бара — не весь шоколадный мир
+    aliases: [батончик, батончики, snickers, сникерс]
+  - sku: MEGACHIPS-75
+    name: "MEGACHIPS 75 г"
+    category: snack
+    weight: "75 г"
+    aliases: [megachips, мегачипс, megachip, "mega chips"]
+
+  - sku: COCA-033
+    name: "COCA-COLA 0.33"
+    category: drink
+    weight: "0.33 л"
+    aliases: [coca, cola, "coca-cola", cocacola, кока, кола]
+  - sku: FANTA-033
+    name: "FANTA 0.33"
+    category: drink
+    weight: "0.33 л"
+    aliases: [fanta, фанта]
+  - sku: SPRITE-033
+    name: "SPRITE 0.33"
+    category: drink
+    weight: "0.33 л"
+    aliases: [sprite, спрайт]
+  - sku: SCHWEPPES-033
+    name: "SCHWEPPES 0.33"
+    category: drink
+    weight: "0.33 л"
+    aliases: [schweppes, швеппс, швепс]
+  - sku: BONAQUA-05
+    name: "BON AQUA 0.5"
+    category: drink
+    weight: "0.5 л"
+    aliases: [bonaqua, "bon aqua", бонаква, "бон аква"]
+  - sku: RICH-05
+    name: "ЧАЙ RICH 0.5"
+    category: drink
+    weight: "0.5 л"
+    aliases: [rich, рич, "чай rich"]
+  - sku: GORILLA-045
+    name: "GORILLA 0.45"
+    category: energy
+    weight: "0.45 л"
+    aliases: [gorilla, горилла]
+  - sku: BEER-05
+    name: "ПИВО 0.5 (бутылка)"
+    category: alcohol
+    weight: "0.5 л"
+    aliases: [пиво, beer, lidskae, лидское, "крыніца", krynica, "алiварыя", alivaria, "жигули", zhiguli]
+
+# Чужие бренды → сразу «со своим»
+forbidden_brands:
+  - pepsi
+  - пепси
+  - "red bull"
+  - redbull
+  - редбулл
+  - burn
+  - берн
+  - monster
+  - монстр
+  - adrenaline
+  - адреналин
+  - "drive me"
+  - lays
+  - "lay's"
+  - лейз
+  - pringles
+  - принглс
+  - heineken
+  - budweiser
+  - flash
+  - liftoff
+  - nestle
+  - evian
+  - borjomi
+  - боржоми
+  - dobriy
+  - добрый
+  - myagkov
+  - mcdonalds
+  - "burger king"
+  - kfc
+
+always_own_classes:
+  - banana
+  - apple
+  - sandwich
+  - orange
+  - broccoli
+  - carrot
+  - hot_dog
+  - pizza
+  - donut
+  - cake

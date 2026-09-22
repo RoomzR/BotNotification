@@ -1,0 +1,192 @@
+allowed_brands:
+- пиво
+- beer
+- lidskae
+- лидское
+- крыніца
+- krynica
+- алiварыя
+- alivaria
+- жигули
+- zhiguli
+- ПИВО 0.5 (бутылка)
+- BEER-05
+- bonaqua
+- bon aqua
+- бонаква
+- бон аква
+- BON AQUA 0.5
+- BONAQUA-05
+- coca
+- cola
+- coca-cola
+- cocacola
+- кока
+- кола
+- COCA-COLA 0.33
+- COCA-033
+- fanta
+- фанта
+- FANTA 0.33
+- FANTA-033
+- schweppes
+- швеппс
+- швепс
+- SCHWEPPES 0.33
+- SCHWEPPES-033
+- sprite
+- спрайт
+- SPRITE 0.33
+- SPRITE-033
+- rich
+- рич
+- чай rich
+- ЧАЙ RICH 0.5
+- RICH-05
+- gorilla
+- горилла
+- GORILLA 0.45
+- GORILLA-045
+- chupa
+- chupachups
+- chupa chups
+- чупа
+- CHUPA CHUPS 70 г
+- CHUPA-70
+- fruttella
+- фрутелла
+- frutella
+- FRUTTELLA 70 г
+- FRUTTELLA-70
+- GRENKI
+- гренки
+- fun
+- '05.25'
+- hechok
+- vol
+- list
+- netflix
+- primevideo
+- tcl
+- youtube
+- Grenki молодой чеснок
+- GRENKI-01
+- m&m
+- mms
+- m and m
+- m&ms
+- эмэнэмс
+- M&M'S 45 г
+- MMS-45
+- megachips
+- мегачипс
+- megachip
+- mega chips
+- MEGACHIPS 75 г
+- MEGACHIPS-75
+- skittles
+- скитлс
+- SKITTLES 38 г
+- SKITTLES-38
+- tuc
+- тук
+- 498kxan
+- 2088kk
+- 100r
+- xpyctaowaa
+- cbip
+- lon
+- kpekep
+- wheuo
+- ihmoopmate
+- xpyctana
+- TUC 100 г
+- TUC-100
+- батончик
+- батончики
+- snickers
+- сникерс
+- БАТОНЧИКИ 50 г
+- BARS-50
+- bonpari
+- bon pari
+- бонпари
+- бон пари
+- БОН ПАРИ 70 г
+- BONPARI-70
+- бульба
+- bulba
+- bulba chips
+- БУЛЬБА CHIPS 75 г
+- BULBA-75
+- хрустим
+- hrusteam
+- khrustim
+- hrustim
+- ХРУСТИМ 70 г
+- HRUSTIM-70
+forbidden_brands:
+- pepsi
+- пепси
+- red bull
+- redbull
+- редбулл
+- burn
+- берн
+- monster
+- монстр
+- adrenaline
+- адреналин
+- drive me
+- lays
+- lay's
+- лейз
+- pringles
+- принглс
+- heineken
+- budweiser
+- flash
+- liftoff
+- nestle
+- evian
+- borjomi
+- боржоми
+- dobriy
+- добрый
+- myagkov
+- mcdonalds
+- burger king
+- kfc
+always_own_classes:
+- banana
+- apple
+- sandwich
+- orange
+- broccoli
+- carrot
+- hot_dog
+- pizza
+- donut
+- cake
+club_volumes:
+  BEER-05: 0.5 л
+  BONAQUA-05: 0.5 л
+  COCA-033: 0.33 л
+  FANTA-033: 0.33 л
+  SCHWEPPES-033: 0.33 л
+  SPRITE-033: 0.33 л
+  RICH-05: 0.5 л
+  GORILLA-045: 0.45 л
+  CHUPA-70: 70 г
+  FRUTTELLA-70: 70 г
+  GRENKI-01: 100 Г
+  MMS-45: 45 г
+  MEGACHIPS-75: 75 г
+  SKITTLES-38: 38 г
+  TUC-100: 100 г
+  BARS-50: 50 г
+  BONPARI-70: 70 г
+  BULBA-75: 75 г
+  HRUSTIM-70: 70 г
+club_max_liters: 0.65
+note: 'Бар: 0.33 / 0.45 / 0.5 л. 1л и 2л = своё, даже если бренд знакомый.'

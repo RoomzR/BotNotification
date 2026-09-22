@@ -1,0 +1,23 @@
+{
+  "models": {
+    "brand_eye": {
+      "path": "models/brandeye.pt",
+      "repo": "haydarkadioglu/brand-eye",
+      "note": "YOLO brand/logo detector",
+      "ok": true,
+      "bytes": 52067090
+    },
+    "retail_product": {
+      "path": "models/retail_product.pt",
+      "repo": "prince4332/yolov26-product-detection",
+      "note": "Retail product detector",
+      "ok": true,
+      "bytes": 44024985
+    },
+    "yolov8n": {
+      "path": "yolov8n.pt",
+      "note": "COCO base",
+      "ok": true
+    }
+  }
+}
